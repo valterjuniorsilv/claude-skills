@@ -1,5 +1,7 @@
 # Claude Skills — by Valter Silva
 
+[![CI](https://github.com/valterjuniorsilv/claude-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/valterjuniorsilv/claude-skills/actions) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Release](https://img.shields.io/github/v/release/valterjuniorsilv/claude-skills)](https://github.com/valterjuniorsilv/claude-skills/releases)
+
 > Skills customizadas pro [Claude Code](https://claude.com/claude-code), nascidas dentro da operação real da [NodusHub](https://nodushub.com.br) — uma agência IA-first que constrói stacks de aquisição (tráfego pago + atendente de IA + CRM) pra clínicas no Brasil.
 >
 > Tudo o que tá aqui é o que eu uso todo dia. Não é teoria, não é "boas práticas" — é o que sobreviveu na produção.

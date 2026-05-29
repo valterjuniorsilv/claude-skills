@@ -1,0 +1,27 @@
+name: Validate Skills
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate skill frontmatter
+        shell: bash
+        run: |
+          set -e
+          fail=0
+          for f in $(find . -name SKILL.md -not -path './.git/*'); do
+            echo "Checking $f"
+            head -1 "$f" | grep -q '^---$' || { echo "  ERR: missing frontmatter open"; fail=1; }
+            grep -q '^name:' "$f" || { echo "  ERR: missing name field"; fail=1; }
+            grep -q '^description:' "$f" || { echo "  ERR: missing description field"; fail=1; }
+          done
+          [ $fail -eq 0 ] && echo "All skills valid." || exit 1
