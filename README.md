@@ -150,7 +150,7 @@ MIT. Usa, modifica, comercializa, vende. Só não tira meu nome dos créditos da
 
 ## Roadmap
 
-- [ ] Sprint 2: agents NodusHub sanitizados (`nodus-agents` repo separado)
+- [ ] Sprint 2: agents NodusHub sanitizados (`agency-as-agents` repo separado)
 - [ ] Sprint 2: template de bot WhatsApp (`claude-whatsapp-template`)
 - [ ] Sprint 3: tradução EN das skills PT-BR-only
 - [ ] Sprint 3: vídeos curtos demonstrando cada skill em uso real
